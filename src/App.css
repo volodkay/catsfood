@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: "customshrift";
+  src: url("/customshrift.otf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root{
+  font-family: 'Trebuchet MS';
+  display: flex;
+  margin:0;
+  padding:0;
+  background: url(/fon.png) no-repeat center center;
+  background-size: cover;
   min-height: 100vh;
+  height: 100%;
+}
+.zag{
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  font-family: customshrift;
+  font-size:36px;
+  color:#fff;
+}
+.center{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin:auto;
+}
+.shape{
+  margin: auto;
+  cursor: pointer;
+  height:481px;
+  width:320px;
+  position: relative;
+  background-size: cover;
+}
+.topTxt{
+  box-sizing: border-box;
+  padding-top:20px;
+  color:#666666;
+  font-size:16px;
+}
+.name{
+  margin-top:10px;
+  font-size:48px;
+  color:#000;
+}
+.taste{   
+  font-weight: bold;
+  font-size:24px;
+  color:#000;
+}
+.count{
+  margin-top:10px; 
+  font-size:14px;
+  color:#666;
+}
+.microwrapper{
+  width:70%;
+  margin: auto;
+}
+.ves{
+  position: absolute;
+  right:15px;
+  bottom: 15px;
+  color:#fff;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  background:#1698d9;
+  border-radius: 50%;
+  padding:5px;
+  width:80px;
+  height: 80px;
 }
-
-.App-link {
-  color: #61dafb;
+.kg{
+  font-size:16px;
 }
+.catBlock{
+  box-sizing: border-box;
+  width:390px;
+ 
+  margin:30px 40px;
+}
+@media screen and (max-width:500px){
+  .catBlock{
+    width:330px;
+    margin:30px 10px;
+  }
+}
+.cats{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-wrap: wrap;
+}
+.underShapeTxt{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top:15px;
+  color:#fff;
+  text-align: center;
+}
+.kupi{
+  color:#1698d9;
+  text-decoration:none;
+  border-bottom:#1698d9 dashed 2px;
+}
+span{
+  color:#1698d9;
+}
+.d1{
+  background-image: url(/defaultShape.png);
+}
+.d2{
+  background-image: url(/disabledShape.png);
+}
+.d3{
+  background-image: url(/hoverShape.png);
+}
+.d4{
+  background-image: url(/rejectShape.png);
+}
+.d4{
+  background-image: url(/selectShape.png);
 }
